@@ -16,11 +16,12 @@ public class Filtering {
 	        while (scan.hasNext()) {
 	            filter.add(scan.next());
 	        }		
+	        scan.close();
 	        check = true;
 		}
 	}
 	
-	public static HashSet<String> filteringList() {
+	public HashSet<String> filteringList() {
         return filter;
     }
 	
